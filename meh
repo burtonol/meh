@@ -2,14 +2,14 @@
 # Python code to solve the "Swim and run" question 
 # 
 a = 130.0 # distance of the swimmer from the shore 
-b = 50.0 # distance of the bicycle from the shore 
-d = 145.8 # distance along shore 
-v1 = 1.458 # swimming speed 
-v2 = 8.100 # running speed 
+b = 70.0 # distance of the bicycle from the shore 
+d = 194.0 # distance along shore 
+v1 = 1.530 # swimming speed 
+v2 = 9.000 # running speed 
 n = 100 # Number of intervals along the shore 
 x = 0.0 # First position on the shore 
 dx = d / n # length of one interval 
 for i in range(0,(n+1)): 
-ZZt = sqrt(a**2 + x**2)/v1 + sqrt((d-x)**2 + b**2)/v2 
-ZZprint('{:03d} {:08.4f} {:08.4f}'.format(i,x,t)) 
-ZZx = x + dx
+  t = sqrt(a**2 + x**2)/v1 + sqrt((d-x)**2 + b**2)/v2 
+  print('{:03d} {:08.4f} {:08.4f}'.format(i,x,t)) 
+  x = x + dx
